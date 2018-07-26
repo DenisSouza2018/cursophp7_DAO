@@ -16,11 +16,18 @@ echo $root;*/
 //echo json_encode($search);
 
 //Carregar um Usuario usando o login e senha
-$usuario = new Usuario();
-$usuario->login("Denisx\ Souza","abc12523");
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->login("Denisx\ Souza","abc12523");
+//echo $usuario;
 
 
+//Inserir usuario novo
+
+$aluno = new Usuario("Isaias Machado","Brasil2015");
+
+$aluno->insert();
+
+echo $aluno;
 
 
  ?>
