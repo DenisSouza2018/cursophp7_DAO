@@ -22,12 +22,14 @@ echo $root;*/
 
 
 //Inserir usuario novo
+//$aluno = new Usuario("Isaias Machado","Brasil2015");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno = new Usuario("Isaias Machado","Brasil2015");
-
-$aluno->insert();
-
-echo $aluno;
-
+//Update em Usuario -> Alterando informaçao do usuario!
+$usuario = new Usuario();
+$usuario->loadbyId(9);
+$usuario->update("Professor","000");
+ echo $usuario;
 
  ?>
