@@ -27,9 +27,17 @@ echo $root;*/
 //echo $aluno;
 
 //Update em Usuario -> Alterando informaçao do usuario!
+//$usuario = new Usuario();
+//$usuario->loadbyId(9);
+//$usuario->update("Professor","000");
+// echo $usuario;
+
+// Deletar um Usuario 
 $usuario = new Usuario();
-$usuario->loadbyId(9);
-$usuario->update("Professor","000");
- echo $usuario;
+$usuario->loadbyId(10);
+$usuario->delete();
+echo $usuario;
+
+
 
  ?>
