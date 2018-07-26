@@ -1,17 +1,26 @@
 <?php 
 
 require_once("config.php");
-
-//$sql = new Sql();
-
-//$user=$sql->select("SELECT * FROM tb_usuarios");
-
-//echo json_encode($user);
-
+// Traz um usuario do banco
+/*
 $root = new Usuario();
+$root->loadbyId(3);
+echo $root;*/
 
-$root->loadbyId(3);// Traz do bando de dados o Id 3 do usurio
+// Carrega uma lista de usuarios do banco 
+//$lista= Usuario::getList();
+//echo json_encode($lista);
 
-echo $root;
+//Carrega um lista pelo ID
+//$search = Usuario::search("ju");
+//echo json_encode($search);
+
+//Carregar um Usuario usando o login e senha
+$usuario = new Usuario();
+$usuario->login("Denisx\ Souza","abc12523");
+echo $usuario;
+
+
+
 
  ?>
